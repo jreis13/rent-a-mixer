@@ -1,1 +1,11 @@
 // Specific CSS for your home-page
+.container-img {
+  background-size: cover;
+  background-image: asset-url("banner-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-application{
+  min-height: 95vh;
+}
