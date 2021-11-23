@@ -1,0 +1,14 @@
+<div class="panel-heading">
+  <h1>Our offers:</h1>
+  <div class="card-category">
+    <% @services.each do |service| %>
+    <tr>
+      <td><%= service.name %></td>
+      <td><%= service.price %></td>
+      <td><%= link_to 'More information', service_path %></td>
+  <% end %>
+  </div>
+  <div>
+    <a class="btn btn-flat" href="/services/new">Add a service!</a>
+  </div>
+</div>
