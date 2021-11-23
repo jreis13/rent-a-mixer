@@ -1,21 +1,27 @@
 <div class="container">
   <div class="panel-heading">
     <h1>Our offers:</h1>
-          <% @services.each do |service| %>
-    <div class="card-product">
-      <img src="https://www.bartendercompany.com/wp-content/uploads/2018/06/pexels-anthony-shkraba-4485349-reduced-2048x1365-1.jpeg" />
-      <div class="card-product-infos">
-        <h2><%= service.name %></h2>
-        <p><%= service.price %>€</p>
-        <%= link_to 'Details', service_path(service.id) %>
-      </div>
-    </div>
-      <% end %>
 
+  <% @services.each do |service| %>
+  <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1513470939372-bd520e7d77db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80" />
+      <div class="card-trip-infos">
+          <div>
+            <h2><%= service.name %></h2>
+            <h2></h2>
+            <p></p>
+            <%= link_to 'Details', service_path(service.id) %>
+          </div>
+        <h2 class="card-trip-pricing"><%= service.price %>€</h2>
+          <img src="https://cdn.domestika.org/c_fill,dpr_auto,f_auto,h_256,pg_1,t_base_params,w_256/v1574805183/avatars/001/739/354/1739354-original.jpeg?1574805183" class="card-trip-user avatar-bordered" />
+      </div>
+  </div>
+    <% end  %>
+
+  </div>
     <div>
       <a class="btn btn-login" href="/services/new">Add a service!</a>
     </div>
-  </div>
 
   <%= link_to root_path do %>
     <i class="fas fa-step-backward"></i>
