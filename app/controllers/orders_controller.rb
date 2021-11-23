@@ -33,5 +33,3 @@ class OrdersController < ApplicationController
     @service = Service.find(params[:service_id])
   end
 end
-
-end
