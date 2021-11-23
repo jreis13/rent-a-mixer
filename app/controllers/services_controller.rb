@@ -15,8 +15,9 @@ class ServicesController < ApplicationController
 
   def create
     @service = Service.new(service_params)
-    if @service.save
-      redirect_to service_path(@service)
+    @service.user_id = current_user.id
+    if @service.save!
+      redirect_to services_path(@service)
     else
       render :new
     end
