@@ -23,11 +23,11 @@
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: bolder;
-  opacity: 0.6;
+  opacity: 0.7;
   transition: none;
-}
-
-.btn-ghost:hover {
-  color: #ff8e00;
-  opacity: 1;
+    &:hover {
+      color: #ff8e00;
+      opacity: 1;
+      transition: 0.5s;
+    }
 }
