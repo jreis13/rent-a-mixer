@@ -1,14 +1,20 @@
-<div class="panel-heading">
-  <h1>Our offers:</h1>
-  <div class="card-category">
-    <% @services.each do |service| %>
-    <tr>
-      <td><%= service.name %></td>
-      <td><%= service.price %></td>
-      <td><%= link_to 'More information', service_path %></td>
-  <% end %>
+<div class="container">
+  <div class="panel-heading">
+    <h1>Our offers:</h1>
+    <div class="card-category">
+      <% @services.each do |service| %>
+      <tr>
+        <td><%= service.name %></td>
+        <td><%= service.price %></td>
+        <td><%= link_to 'More information', service_path %></td>
+    <% end %>
+    </div>
+    <div>
+      <a class="btn btn-login" href="/services/new">Add a service!</a>
+    </div>
   </div>
-  <div>
-    <a class="btn btn-flat" href="/services/new">Add a service!</a>
-  </div>
+
+  <%= link_to root_path do %>
+    <i class="fas fa-step-backward"></i>
+  <% end  %>
 </div>

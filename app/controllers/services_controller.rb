@@ -1,9 +1,8 @@
 class ServicesController < ApplicationController
-
   before_action :set_service, only: [:show, :destroy]
 
   def index
-    @services = service.all
+    @services = Service.all
   end
 
   def show
@@ -11,11 +10,11 @@ class ServicesController < ApplicationController
   end
 
   def new
-    @service = service.new
+    @service = Service.new
   end
 
   def create
-    @service = service.new(service_params)
+    @service = Service.new(service_params)
     if @service.save
       redirect_to service_path(@service)
     else
@@ -31,7 +30,7 @@ class ServicesController < ApplicationController
   private
 
   def set_service
-    @service = service.find(params[:id])
+    @service = Service.find(params[:id])
   end
 
   def service_params
