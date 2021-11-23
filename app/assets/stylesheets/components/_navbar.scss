@@ -1,10 +1,24 @@
+.navbar {
+  min-height: 2vh;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background-color: #DDDDDD;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+}
+
+.fa-sign-in-alt {
+  color: black;
+  font-size: 25px;
+  opacity: 0.6;
+}
+
+.fa-sign-in-alt:hover {
+  opacity: 1;
 }
 
 .navbar-lewagon .navbar-brand img {
