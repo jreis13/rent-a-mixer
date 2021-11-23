@@ -1,14 +1,17 @@
 <div class="container">
   <div class="panel-heading">
     <h1>Our offers:</h1>
-    <div class="card-category">
-      <% @services.each do |service| %>
-      <tr>
-        <td><%= service.name %></td>
-        <td><%= service.price %></td>
-        <td><%= link_to 'More information', service_path %></td>
-    <% end %>
+          <% @services.each do |service| %>
+    <div class="card-product">
+      <img src="https://www.bartendercompany.com/wp-content/uploads/2018/06/pexels-anthony-shkraba-4485349-reduced-2048x1365-1.jpeg" />
+      <div class="card-product-infos">
+        <h2><%= service.name %></h2>
+        <p><%= service.price %>€</p>
+        <%= link_to 'Details', service_path(service.id) %>
+      </div>
     </div>
+      <% end %>
+
     <div>
       <a class="btn btn-login" href="/services/new">Add a service!</a>
     </div>
@@ -17,4 +20,5 @@
   <%= link_to root_path do %>
     <i class="fas fa-step-backward"></i>
   <% end  %>
+  </div>
 </div>
