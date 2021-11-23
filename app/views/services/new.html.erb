@@ -1,4 +1,8 @@
-<h1>Add your service:</h1>
-<%= render 'form', service: @service %>
+<div class="container">
+  <h1>Add your service:</h1>
+  <%= render 'form', service: @service %>
 
-<%= link_to 'Back', services_path %>
+  <%= link_to services_path do %>
+    <i class="fas fa-step-backward"></i>
+  <% end  %>
+</div>
