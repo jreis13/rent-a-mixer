@@ -22,7 +22,7 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:comment, :movie_id)
+    params.require(:order).permit(:details, :status)
   end
 
   def set_order
