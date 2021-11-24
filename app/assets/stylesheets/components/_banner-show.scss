@@ -1,0 +1,23 @@
+.banner-show {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner-text {
+  text-decoration: none !important;
+  color: black;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.show-text {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-text p {
+  font-size: 30px;
+}

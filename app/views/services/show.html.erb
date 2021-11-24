@@ -1,16 +1,15 @@
-<div class="card-category">
-  <p>
-  <strong>Name:</strong>
-  <%= @service.name %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @service.price %>
-</p>
-
-<p>
-  <strong>Details:</strong>
-  <%= @service.description %>
-</p>
+<div class="banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1513470939372-bd520e7d77db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80);">
+  <img src="https://cdn.domestika.org/c_fill,dpr_auto,f_auto,h_256,pg_1,t_base_params,w_256/v1574805183/avatars/001/739/354/1739354-original.jpeg?1574805183" class="card-trip-user-show avatar-bordered" />
 </div>
+  <div class="container show-text">
+    <h1><%= @service.name %></h1>
+    <p>Cost to hire: <strong><%= @service.price %>€/h</strong></p>
+  </div>
+
+  <div class="container">
+    <p><strong>Service description: </strong><%= @service.description %></p>
+
+  <%= link_to services_path do %>
+    <i class="fas fa-step-backward"></i>
+  <% end  %>
+  </div>
