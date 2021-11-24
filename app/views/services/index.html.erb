@@ -5,13 +5,13 @@
 <% @services.each do |service| %>
   <%= link_to service_path(service.id), class: 'banner-text' do %>
     <div class="card-trip">
-      <img src="https://images.unsplash.com/photo-1513470939372-bd520e7d77db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80" />
+      <img src='<%= cl_image_path service.photo.key, height: 300, crop: :fill %>') />
       <div class="card-trip-infos">
         <div>
           <h2><%= service.name %></h2>
         </div>
         <h2 class="card-trip-pricing">Price: <%= service.price %>€</h2>
-          <img src="https://cdn.domestika.org/c_fill,dpr_auto,f_auto,h_256,pg_1,t_base_params,w_256/v1574805183/avatars/001/739/354/1739354-original.jpeg?1574805183" class="card-trip-user avatar-bordered" />
+        <%= cl_image_tag service.user.photo.key, class: "card-trip-user avatar-bordered" %>
       </div>
     </div>
       <% end %>
