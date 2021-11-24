@@ -1,6 +1,7 @@
 <%= simple_form_for @service do |f| %>
-  <%= f.input :name, placeholder: "Fill out your name.." %>
-  <%= f.input :price, placeholder: "What's the price of your service?" %>
-  <%= f.input :description, placeholder: "Say something about yourself..." %>
+  <%= f.input :name, placeholder: " Your service" %>
+  <%= f.input :price, placeholder: "What's the price?" %>
+  <%= f.input :description, placeholder: "Say something..." %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit "Add", class: "btn btn-login" %>
 <% end %>
