@@ -46,7 +46,7 @@ avatar9 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/21111
 mario = User.create(email: 'mario@gmail.com', first_name: 'Dr.', last_name: 'Mario', address: 'Lisbon', password: '123456')
 mario.photo.attach(io: avatar9, filename: 'avatar9.png', content_type: 'image/png')
 
-banner1 = URI.open('https://res.cloudinary.com/drjmsp9it/image/upload/c_fill,h_300/v1/development/gtrwxj57tu84gjvet5ko18i4x7ii')
+banner1 = URI.open('https://assets-prd.punchdrink.com/wp-content/uploads/2016/02/Article-Shingo-Gokan-Bartender-Angels-Share-NYC-Flair-Bartending.jpg')
 service3 = Service.create(name: 'Joao', price: '120', description: 'Bleh, bleh, bleh', user_id: joao.id)
 service3.photo.attach(io: banner1, filename: 'nes.png', content_type: 'image/png')
 
