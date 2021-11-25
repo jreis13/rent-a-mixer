@@ -52,40 +52,40 @@ avatar9 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/21111
 mario = User.create(email: 'mario@gmail.com', first_name: 'Dr.', last_name: 'Mario', address: 'Lisbon', password: '123456')
 mario.photo.attach(io: avatar9, filename: 'avatar9.png', content_type: 'image/png')
 
-banner1 = URI.open('https://assets-prd.punchdrink.com/wp-content/uploads/2016/02/Article-Shingo-Gokan-Bartender-Angels-Share-NYC-Flair-Bartending.jpg')
-service3 = Service.create(name: 'Joao', price: '120', description: 'Bleh, bleh, bleh', user_id: joao.id)
+banner1 = URI.open('https://res.cloudinary.com/drjmsp9it/image/upload/c_fill,h_300/v1/development/gtrwxj57tu84gjvet5ko18i4x7ii')
+service3 = Service.create(name: 'Joao', price: '120', description: 'Bleh, bleh, bleh', address: "Coimbra", user_id: joao.id)
 service3.photo.attach(io: banner1, filename: 'nes.png', content_type: 'image/png')
 
 banner2 = URI.open('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV_ffY9MwW-pIpfm6dc9EbPv-xapUkpR13FA&usqp=CAU')
-service1 = Service.create(name: 'David', price: '100', description: 'Besides being a TA at Le Wagon I have insane cocktail mixing skills!', user_id: david.id)
+service1 = Service.create(name: 'David', price: '100', description: 'Besides being a TA at Le Wagon I have insane cocktail mixing skills!', address: "Lisboa", user_id: david.id)
 service1.photo.attach(io: banner2, filename: 'service_photo4.png', content_type: 'image/png')
 
 banner3 = URI.open('https://craftybartending.com/wp-content/uploads/2017/10/Cocktail-Making-Techniques.jpg')
-service4 = Service.create(name: 'Viktoriia', price: '150', description: 'Blah, blah, blah', user_id: viktoriia.id)
+service4 = Service.create(name: 'Viktoriia', price: '150', description: 'Blah, blah, blah', address: "Lisboa", user_id: viktoriia.id)
 service4.photo.attach(io: banner3, filename: 'service_photo2.png', content_type: 'image/png')
 
 banner4 = URI.open('https://craftybartending.com/wp-content/uploads/2018/04/Cocktails-Bartenders-Should-Know.jpg')
-service5 = Service.create(name: 'Andre', price: '150', description: 'Blah, blah, blah', user_id: andre.id)
+service5 = Service.create(name: 'Andre', price: '150', description: 'Blah, blah, blah', address: "Cascais", user_id: andre.id)
 service5.photo.attach(io: banner4, filename: 'service_photo2.png', content_type: 'image/png')
 
 banner5 = URI.open('https://cf.ltkcdn.net/cocktails/images/orig/232420-1600x1029-basic-drinks-know-before-you-try-bartending.jpg')
-service6 = Service.create(name: 'Tiago', price: '150', description: 'Blah, blah, blah', user_id: tiago.id)
+service6 = Service.create(name: 'Tiago', price: '150', description: 'Blah, blah, blah', address: "Carcavelos", user_id: tiago.id)
 service6.photo.attach(io: banner5, filename: 'service_photo2.png', content_type: 'image/png')
 
-banner6 = URI.open('https://www.vendus.pt/foto/bartender-barman-vendus2_bg.jpg')
-service7 = Service.create(name: 'Felix', price: '250', description: 'Blah, blah, blah', user_id: felix.id)
+banner6 = URI.open('https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/12/06/12/bartender-istock.jpg?width=982&height=726&auto=webp&quality=75')
+service7 = Service.create(name: 'Felix', price: '250', description: 'Blah, blah, blah', address: "Berlin", user_id: felix.id)
 service7.photo.attach(io: banner6, filename: 'service_photo2.png', content_type: 'image/png')
 
 banner7 = URI.open('https://dg38gzoej82xh.cloudfront.net/sites/default/files/styles/image_gallery_xl/public/images/node/article/04-bartender-garnishing-cocktail.jpg?itok=fzcG6nP2')
-service8 = Service.create(name: 'James', price: '350', description: 'Blah, blah, blah', user_id: james.id)
+service8 = Service.create(name: 'James', price: '350', description: 'Blah, blah, blah', address: "Brussels", user_id: james.id)
 service8.photo.attach(io: banner7, filename: 'service_photo2.png', content_type: 'image/png')
 
 banner8 = URI.open('https://www.funktionevents.co.uk/images/pictures/new/uk/activities/hire-a-cocktail-bartender/hire-a-cocktail-bartender-(product-player).jpg?v=9ba2cb3d')
-service9 = Service.create(name: 'Phillip', price: '170', description: 'Blah, blah, blah', user_id: phillip.id)
+service9 = Service.create(name: 'Phillip', price: '170', description: 'Blah, blah, blah', address: "Frankfurt", user_id: phillip.id)
 service9.photo.attach(io: banner8, filename: 'service_photo2.png', content_type: 'image/png')
 
 banner9 = URI.open('https://c.stocksy.com/a/QtIC00/z9/2932564.jpg')
-service10 = Service.create(name: 'Dr. Mario', price: '250', description: 'I used to be a doctor but now I am an excellent coder and bartender!', user_id: mario.id)
+service10 = Service.create(name: 'Dr. Mario', price: '250', description: 'I used to be a doctor but now I am an excellent coder and bartender!', address: "Lisboa", user_id: mario.id)
 service10.photo.attach(io: banner9, filename: 'service_photo2.png', content_type: 'image/png')
 
 puts 'All set, DB successfully created!'
