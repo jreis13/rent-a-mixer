@@ -1,5 +1,6 @@
 .navbar {
   min-height: 2vh;
+  padding: 0.3rem 0.3rem;
 }
 
 .navbar-lewagon {
@@ -13,4 +14,9 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0.7rem;
+    padding-left: 0.5rem;
 }
