@@ -7,9 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "open-uri"
 
+puts 'Deleting DB...'
+
 Service.delete_all
 User.delete_all
-puts 'Destroyed DB'
+
+puts 'DB successfully destroyed.'
+
+puts 'Generating new DB...'
+
 avatar1 = URI.open('https://photos.smugmug.com/photos/i-86cmLwG/0/XL/i-86cmLwG-XL.jpg')
 joao = User.create(email: 'joao@gmail.com', first_name: 'Joao', last_name: 'Reis', address: 'Lisbon', password: '123456')
 joao.photo.attach(io: avatar1, filename: 'avatar1.png', content_type: 'image/png')
@@ -34,7 +40,7 @@ avatar6 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/21111
 james = User.create(email: 'james@gmail.com', first_name: 'James', last_name: 'Donck', address: 'Lisbon', password: '123456')
 james.photo.attach(io: avatar6, filename: 'avatar6.png', content_type: 'image/png')
 
-avatar7 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/211111/i-KKX28Dc/0/ffba78f5/X2/211105%20Le%20Wagon%20mug%20shots_137-X2.jpg')
+avatar7 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/211111/i-6tMCtC8/0/bec9b2c6/X2/211105%20Le%20Wagon%20mug%20shots_099-X2.jpg')
 felix = User.create(email: 'felix@gmail.com', first_name: 'Felix', last_name: 'H.', address: 'Lisbon', password: '123456')
 felix.photo.attach(io: avatar7, filename: 'avatar7.png', content_type: 'image/png')
 
@@ -66,7 +72,7 @@ banner5 = URI.open('https://cf.ltkcdn.net/cocktails/images/orig/232420-1600x1029
 service6 = Service.create(name: 'Tiago', price: '150', description: 'Blah, blah, blah', user_id: tiago.id)
 service6.photo.attach(io: banner5, filename: 'service_photo2.png', content_type: 'image/png')
 
-banner6 = URI.open('https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/12/06/12/bartender-istock.jpg?width=982&height=726&auto=webp&quality=75')
+banner6 = URI.open('https://www.vendus.pt/foto/bartender-barman-vendus2_bg.jpg')
 service7 = Service.create(name: 'Felix', price: '250', description: 'Blah, blah, blah', user_id: felix.id)
 service7.photo.attach(io: banner6, filename: 'service_photo2.png', content_type: 'image/png')
 
@@ -82,6 +88,4 @@ banner9 = URI.open('https://c.stocksy.com/a/QtIC00/z9/2932564.jpg')
 service10 = Service.create(name: 'Dr. Mario', price: '250', description: 'I used to be a doctor but now I am an excellent coder and bartender!', user_id: mario.id)
 service10.photo.attach(io: banner9, filename: 'service_photo2.png', content_type: 'image/png')
 
-
-
-puts 'created DB'
+puts 'All set, DB successfully created!'

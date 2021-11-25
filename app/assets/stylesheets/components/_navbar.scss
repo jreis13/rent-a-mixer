@@ -17,6 +17,29 @@
 }
 
 .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0.7rem;
-    padding-left: 0.5rem;
+    margin-right: 1rem;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: opacity 0.3s ease;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+}
+
+.navbar-expand-sm .navbar-nav .nav-link-sign-up {
+    margin-right: 1rem;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #4A4A4A;
+    border: 1px solid #4A4A4A;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: lighter;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 1;
+    }
 }

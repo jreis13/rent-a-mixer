@@ -1,83 +1,69 @@
-.contact-img {
+.banner {
   background-size: cover;
-  background-image: asset-url("https://unsplash.com/s/photos/cocktail?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText")
-  ");
   background-position: center;
-  background-repeat: no-repeat;
+  padding: 180px 0;
 }
 
-.container .about-us {
-    display: flex;
-    flex-wrap: wrap;
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
 }
 
-.center-contact {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-// Specific CSS for your home-page
-.container-img {
+.card-category {
   background-size: cover;
-  background-image: asset-url("banner-image.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 0px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.container-application{
-  min-height: 85vh;
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 8px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-main {
-  min-height: 85vh;
-}
-.cards {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.card {
-    width: 300px;
-    border-radius: 3px;
-    box-shadow: 0 0 5px #e6e6e6;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #e6e6e6;
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.about-us {
-    background-color: #a5a0a09f;
-    padding-right: 0;
-    padding-left: 0;
-    border-radius: 0;
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    border-radius: 2px;
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
-.about-us h1 {
-    margin-bottom: 30px;
-    color: #201E1F;
-}
-
+/* Add a background color and some padding around the form */
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.container .about-us {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container .about-us>div {
-    flex: 0 50%;
-    justify-content: space-between;
-    padding: 1rem;
+  border-radius: 5px;
+  // background-color: #f2f2f2;
+  padding: 42px;
 }
