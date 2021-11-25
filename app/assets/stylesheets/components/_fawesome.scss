@@ -1,8 +1,17 @@
-.fa-sign-in-alt, .fa-step-backward {
+.fa-sign-in-alt, .fa-step-backward, .fa-arrow-up {
   color: black;
   font-size: 25px;
   opacity: 0.6;
     &:hover {
       opacity: 1;
     }
+}
+
+.fa-sign-in-alt {
+  margin-right: 1rem;
+}
+
+.navigators {
+  display: flex;
+  justify-content: space-between;
 }
