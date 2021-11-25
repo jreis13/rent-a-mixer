@@ -1,0 +1,83 @@
+.contact-img {
+  background-size: cover;
+  background-image: asset-url("https://unsplash.com/s/photos/cocktail?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText")
+  ");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container .about-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center-contact {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+// Specific CSS for your home-page
+.container-img {
+  background-size: cover;
+  background-image: asset-url("banner-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-application{
+  min-height: 85vh;
+}
+
+main {
+  min-height: 85vh;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #e6e6e6;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+}
+
+.about-us {
+    background-color: #a5a0a09f;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 2px;
+}
+
+.about-us h1 {
+    margin-bottom: 30px;
+    color: #201E1F;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container .about-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .about-us>div {
+    flex: 0 50%;
+    justify-content: space-between;
+    padding: 1rem;
+}

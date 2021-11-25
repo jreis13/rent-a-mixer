@@ -1,0 +1,85 @@
+.container-b-img {
+  background-size: cover;
+  background-image: asset-url("banner-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-b-application{
+  min-height: 110vh;
+}
+
+main {
+  min-height: 110vh;
+}
+
+.cards-b {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-b {
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #e6e6e6;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+}
+
+.about-us-b {
+    background-color: #a5a0a09f;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 2px;
+}
+
+.about-us-b h1 {
+    margin-bottom: 30px;
+    color: #201E1F;
+}
+
+.container-b .about-us-b {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-b .about-us-b>div {
+    flex: 0 50%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.container-b {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.container-b .about-us-b {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .about-us>div {
+    flex: 0 50%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.about-us-img-b {
+  background-size: cover;
+  background-image: asset-url("cocktail-background-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
