@@ -28,6 +28,18 @@ main {
     border: 1px solid #e6e6e6;
 }
 
+.card img {
+  height: 200px;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.card h4 {
+  font-size: 27px;
+}
+
 .about-us {
     background-color: #a5a0a09f;
     padding-right: 0;
@@ -41,6 +53,13 @@ main {
 .about-us h1 {
     margin-bottom: 30px;
     color: #201E1F;
+    font-size: 40px;
+}
+
+.about-us p {
+    margin-bottom: 30px;
+    color: #201E1F;
+    font-size: 18px;
 }
 
 .container {
@@ -67,4 +86,8 @@ main {
   background-image: asset-url("cocktail-background-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.about-us-title {
+  text-align: center;
 }
