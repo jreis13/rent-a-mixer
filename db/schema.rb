@@ -15,6 +15,11 @@ ActiveRecord::Schema.define(version: 2021_11_25_113433) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "about_us", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -41,6 +46,11 @@ ActiveRecord::Schema.define(version: 2021_11_25_113433) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "orders", force: :cascade do |t|
