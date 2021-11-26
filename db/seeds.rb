@@ -70,7 +70,7 @@ mario.photo.attach(io: avatar9, filename: 'avatar9.png', content_type: 'image/pn
 
 puts "Created #{mario.photo.attached?}-"
 
-puts banner1 = URI.open('https://res.cloudinary.com/drjmsp9it/image/upload/c_fill,h_300/v1/development/gtrwxj57tu84gjvet5ko18i4x7ii')
+puts banner1 = URI.open('https://res.cloudinary.com/drjmsp9it/image/upload/v1637936435/development/hl5g9aaz52eo0i3hw6mx3it960cy.jpg')
 service3 = Service.create(name: 'Joao', price: '120', description: 'Bleh, bleh, bleh', address: "Coimbra", user_id: joao.id)
 service3.photo.attach(io: banner1, filename: 'nes.png', content_type: 'image/png')
 
