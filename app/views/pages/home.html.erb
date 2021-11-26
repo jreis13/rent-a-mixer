@@ -5,13 +5,15 @@
       <br>
       <p>Connect with experienced cocktail mixers to spice up your events.</p>
         <div class="search-form-control form-group simple_form search">
-          <%= form_tag services_path, method: :get do %>
+          <%= form_tag services_path, method: :get, class: "form-org" do %>
             <%= text_field_tag :query,
               params[:query],
-              class: "form-control",
+              class: "form-control min-width-form",
               placeholder: "Search by location..."
             %>
-            <%= submit_tag "Get started", class: "btn btn-ghost" %>
+            <div class="btn-home">
+              <%= submit_tag "Get started", class: "btn btn-ghost" %>
+            </div>
           <% end %>
         </div>
     </div>

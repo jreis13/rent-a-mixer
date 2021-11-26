@@ -18,17 +18,19 @@
 }
 
 .btn-ghost {
-  color: #ff8e00;
+  background-color: #ff8e00;
+  color: white;
   border: 1px solid #ff8e00 ;
   font-size: 17px;
   margin-bottom: 10px;
   padding: 8px 22px;
   border-radius: 50px;
   font-weight: bolder;
-  opacity: 0.7;
+  opacity: 0.9;
   transition: none;
     &:hover {
-      color: #ff8e00;
+      color: white;
+      background-color: #ff8e00;
       opacity: 1;
       transition: 0.5s;
     }
