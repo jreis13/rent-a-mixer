@@ -17,12 +17,17 @@
 }
 
 .social-links a {
+    margin-top: 8px;
     color: black;
     opacity: 0.15;
     text-decoration: none;
     font-size: 17px;
     padding: 0px 10px;
     align-items: center;
+}
+
+.social-links a:hover {
+    opacity: 1;
 }
 
 a {
@@ -81,7 +86,7 @@ main {
   max-width:500px;
   max-height:400px;
   width: auto;
-
+  background-position: center;
 }
 
 .card-b p {
