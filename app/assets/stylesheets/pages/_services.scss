@@ -1,0 +1,22 @@
+.card-map-align {
+  display: flex;
+  align-content: space-between;
+  margin-left: 20px;
+}
+
+.navigators {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.panel-heading {
+  margin-left: 20px;
+}
+
+.card-map-align #map {
+  height: 100vh;
+  margin-left: 25px;
+  margin-right: 20px;
+  position: sticky;
+  top: 0;
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <script src="https://kit.fontawesome.com/3972b70179.js" crossorigin="anonymous"></script>
     <title>RentAMixer</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -8,15 +9,16 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
+    <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
   <body>
     <%= render 'shared/navbar' %>
-    <main class="container-img container-application">
+    <main>
       <%= yield %>
       <%= render 'shared/flashes' %>
     </main>
+      <%= render 'shared/footer' %>
   </body>
 </html>

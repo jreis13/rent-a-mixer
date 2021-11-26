@@ -1,0 +1,150 @@
+.social {
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding: 20px 20px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
+#social-media {
+     display: flex;
+     padding: 0 10px;
+     width: 100%;
+     justify-content: space-evenly;
+}
+
+.social-links a {
+    margin-top: 8px;
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+a {
+    color: #167FFB;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.fa, .fas, .far, .fal, .fad, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    align-items: center;
+}
+
+
+// .container-img {
+//   background-size: cover;
+//   background-image: asset-url("banner-image.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
+
+.container-b {
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
+}
+.cards-b {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.card-b {
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #e6e6e6;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+}
+
+.card-b img {
+  display: block;
+  max-width:500px;
+  max-height:400px;
+  width: auto;
+  background-position: center;
+}
+
+.card-b p {
+  font-size: 15px;
+}
+
+.card-b h4 {
+  font-size: 27px;
+}
+
+.about-us-b {
+    background-color: #a5a0a09f;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 2px;
+}
+
+.about-us-b h1 {
+    margin-bottom: 30px;
+    color: #201E1F;
+    font-size: 40px;
+}
+
+.about-us-b p {
+    margin-bottom: 30px;
+    color: #201E1F;
+    font-size: 18px;
+}
+
+.container-b {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-b .about-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-b .about-us>div {
+    flex: 0 50%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.about-us-img {
+  background-size: cover;
+  background-image: asset-url("cocktail-background-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-us-title {
+  text-align: center;
+}

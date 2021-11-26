@@ -7,5 +7,61 @@
 }
 
 .container-application{
-  min-height: 95vh;
+  min-height: 85vh;
+}
+
+main {
+  min-height: 85vh;
+}
+
+.about-us {
+  background-color: #a5a0a09f;
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 2px;
+}
+
+.about-us h1 {
+  margin-bottom: 30px;
+  color: #201E1F;
+  font-size: 40px;
+}
+
+.about-us p {
+    margin-bottom: 30px;
+    color: #201E1F;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container .about-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .about-us>div {
+    flex: 0 50%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.about-us-img {
+  background-size: cover;
+  background-image: asset-url("cocktail-background-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-us-title {
+  text-align: center;
 }
