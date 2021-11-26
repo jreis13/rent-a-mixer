@@ -2,8 +2,13 @@ class ServicesController < ApplicationController
   before_action :set_service, only: [:show, :destroy]
 
   def index
-    @services = Service.all
-    @markers = @services.geocoded.map do |service|
+    if params[:query].present?
+      puts params[:query]
+      @services = Service.search_by_address(params[:query])
+    else
+      @services = Service.all
+    end
+      @markers = @services.geocoded.map do |service|
       {
         lat: service.latitude,
         lng: service.longitude,
