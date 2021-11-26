@@ -14,33 +14,6 @@ main {
   min-height: 85vh;
 }
 
-.cards {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.card {
-    width: 300px;
-    border-radius: 3px;
-    box-shadow: 0 0 5px #e6e6e6;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #e6e6e6;
-}
-
-.card img {
-  height: 250px;
-}
-
-.card p {
-  font-size: 15px;
-}
-
-.card h4 {
-  font-size: 27px;
-}
-
 .about-us {
   background-color: #a5a0a09f;
   padding-right: 0;
