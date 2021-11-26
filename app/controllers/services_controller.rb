@@ -3,6 +3,14 @@ class ServicesController < ApplicationController
 
   def index
     @services = Service.all
+    @markers = @services.geocoded.map do |service|
+      {
+        lat: service.latitude,
+        lng: service.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { service: service }),
+        image_url: helpers.asset_url('marker.png')
+      }
+    end
   end
 
   def show
@@ -35,6 +43,6 @@ class ServicesController < ApplicationController
   end
 
   def service_params
-    params.require(:service).permit(:name, :description, :price, :photo)
+    params.require(:service).permit(:name, :description, :price, :photo, :address)
   end
 end

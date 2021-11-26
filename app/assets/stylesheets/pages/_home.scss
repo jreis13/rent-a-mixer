@@ -13,6 +13,7 @@
 main {
   min-height: 85vh;
 }
+
 .cards {
     display: flex;
     justify-content: space-between;
@@ -41,19 +42,19 @@ main {
 }
 
 .about-us {
-    background-color: #a5a0a09f;
-    padding-right: 0;
-    padding-left: 0;
-    border-radius: 0;
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    border-radius: 2px;
+  background-color: #a5a0a09f;
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 2px;
 }
 
 .about-us h1 {
-    margin-bottom: 30px;
-    color: #201E1F;
-    font-size: 40px;
+  margin-bottom: 30px;
+  color: #201E1F;
+  font-size: 40px;
 }
 
 .about-us p {
