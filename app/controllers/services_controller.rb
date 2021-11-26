@@ -3,7 +3,8 @@ class ServicesController < ApplicationController
 
   def index
     if params[:query].present?
-      @services = Service.where("title ILIKE ?", "%#{params[:query]}%")
+      puts params[:query]
+      @services = Service.search_by_address(params[:query])
     else
       @services = Service.all
     end
