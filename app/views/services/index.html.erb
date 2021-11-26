@@ -15,9 +15,9 @@
             <img src='<%= cl_image_path service.photo.key, height: 300, crop: :fill %>') />
             <div class="card-trip-infos">
               <div>
-                <h2><%= service.name %></h2>
+                <h2 class="description"><%= service.name %></h2>
               </div>
-              <h2 class="card-trip-pricing">Price: <%= service.price %>€</h2>
+              <h2 class="card-trip-pricing description">Price: <%= service.price %>€</h2>
               <%= cl_image_tag service.user.photo.key, class: "card-trip-user avatar-bordered" %>
             </div>
           </div>
@@ -32,10 +32,6 @@
   </div>
   <br>
   <div class="navigators">
-    <%= link_to root_path do %>
-      <i class="fas fa-step-backward"></i>
-    <% end  %>
-
     <%= link_to services_path do %>
       <i class="fas fa-arrow-up"></i>
     <% end  %>

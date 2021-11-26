@@ -3,13 +3,9 @@
 </div>
   <div class="container show-text">
     <h1><%= @service.name %></h1>
-    <p>Cost to hire: <strong><%= @service.price %>€/h</strong></p>
+    <p class="description">Cost to hire: <strong><%= @service.price %>€/h</strong></p>
   </div>
 
   <div class="container">
     <p><strong>Service description: </strong><%= @service.description %></p>
-
-  <%= link_to services_path do %>
-    <i class="fas fa-step-backward"></i>
-  <% end  %>
   </div>
