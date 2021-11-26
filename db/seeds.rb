@@ -77,7 +77,17 @@ service3.photo.attach(io: banner1, filename: 'nes.png', content_type: 'image/png
 puts "Created service -#{service3.photo.attached?}joao-"
 
 puts banner2 = URI.open('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV_ffY9MwW-pIpfm6dc9EbPv-xapUkpR13FA&usqp=CAU')
-service1 = Service.create(name: 'David', price: '100', description: 'Besides being a TA at Le Wagon I have insane cocktail mixing skills!', address: "Lisboa", user_id: david.id)
+service1 = Service.create(name: 'David', price: '100', description: 'My name is David and I am an expert mixologist.
+What is a mixologist you ask?
+A mixologist is a person who has studied the history of mixed drinks and cocktails. They often know the significance behind each ingredient in a drink and understand the impact of each mixing technique. Mixologists create new cocktail recipes by combining innovative ideas with traditional knowledge. While these professionals may work behind a bar and serve drinks to customers, a large portion of their work involves the design and creation of new cocktail recipes. Their other job duties include:
+Creating a unique version of a traditional cocktail
+Using untraditional bar tools to create innovative drinks
+Combining ingredients to present new cocktail recipes
+Staying knowledgeable about new cocktail trends
+Collaborating with other mixologists to learn new techniques
+Supervising bartenders
+Developing extensive, personalized cocktail menus for a restaurant, event or bar
+If you have a fun time, hire me!', address: "Lisboa", user_id: david.id)
 service1.photo.attach(io: banner2, filename: 'service_photo4.png', content_type: 'image/png')
 
 puts "Created service -#{service1.photo.attached?}david-"
@@ -113,7 +123,10 @@ service8.photo.attach(io: banner7, filename: 'service_photo2.png', content_type:
 puts "Created service -#{service8.photo.attached?}james-"
 
 puts banner8 = URI.open('https://www.funktionevents.co.uk/images/pictures/new/uk/activities/hire-a-cocktail-bartender/hire-a-cocktail-bartender-(product-player).jpg?v=9ba2cb3d')
-service9 = Service.create(name: 'Phillip', price: '170', description: 'Blah, blah, blah', address: "Frankfurt", user_id: phillip.id)
+service9 = Service.create(name: 'Phillip', price: '170', description: 'Hi my name is Philipp Sommerfeld!
+People mistakenly think that I’m a software developer, but I’m chattier than most of the coders you’ll meet. I talk, I listen, and I’m goddamn hilarious. I’m passionate about mixing drinks, interacting with customers, and serving them a drink they’ll never forget.
+My specialties are mixing German beers with fun things like Coca Cola or Fanta. Yes, we Germans actually do that! :)
+Make no mistake, I have personality and a soul. Its spirit can be sensed when taking your order. You converse with something that is almost supernatural, yet very real – a German with a sense of humor. I am the perfect bartender trained to deliver excellence. Especially when serving a drink precisely to your liking.', address: "Frankfurt", user_id: phillip.id)
 service9.photo.attach(io: banner8, filename: 'service_photo2.png', content_type: 'image/png')
 
 puts "Created service -#{service9.photo.attached?}phillip-"
